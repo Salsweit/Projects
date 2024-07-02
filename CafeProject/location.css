@@ -1,65 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .location-content {
     position: relative;
-    display: flex;
+    z-index: 200;
     bottom: -100%;
-    z-index: 200px;
-    justify-content: center;
+    
 }
 
-.loc-img{    
-    width: 100%;
+.location-content img {
     height: 621px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.loc-content {
+.location-content .title {
     position: absolute;
-    align-items: center;
+    text-align: center;
+    max-width: 900px;
+    margin: 48px auto;
 }
 
-.loc-content .header {
-    align-self: center;
+.location-content .title h2 {
     font-size: 36px;
     color: #F7EBE1;
-    font-weight: 600;
-    margin-top: 59px;
 }
 
-.loc-content .paragraph {
+.location-content .title p {
     font-size: 16px;
     color: #F7EBE1;
-    top: 160px;
+    margin-bottom: 53px;
 }
 
 .location-modal {
+    position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-top: 20px;
+    top: 33%;
 }
 
-.location-modal .first-modal {
-    min-height: 320px;
-    width: 203.5px;
-    background-color: #F7EBE1;
-    margin-right: 21.5px;
-    border-radius: 4px;
+.location-modal .modal {
     padding: 15px;
+    background-color: #F7EBE1;
+    width: 300px;
+    margin-right: 21.5px;
+    border: none;
+    border-radius: 4px;
+    height: 260px;
 }
 
-.location-modal .sec-modal {
-    height: 160px;
-    width: 203.5px;
-    background-color: #F7EBE1;
-    margin-right: 21.5px;
-    border-radius: 4px;
-    padding: 15px;
+.location-modal .modal-header {
+    text-align: center;
+    border-bottom: 1px solid #7E7B80;
+    padding-bottom: 10px;
+    font-weight: 500;
+    color: #7E7B80;
+    font-family: Poppins;
 }
-.location-modal .third-modal {
-    height: 160px;
-    width: 203.5px;
-    background-color: #F7EBE1;
-    margin-right: 21.5px;
-    border-radius: 4px;
-    padding: 15px;
+
+.location-modal .loc-direction a {
+    color: #383838;
+    font-weight: 500;
+    font-family: Poppins;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.location-modal .loc-direction {
+    text-align: center;
+}
+
+.location-modal .loc-direction a:hover {
+    text-shadow: 0px 5px 6px rgba(62, 62, 51, 0.64);
 }
