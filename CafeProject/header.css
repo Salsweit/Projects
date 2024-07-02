@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.header {
+    position: relative;
+    display: flex;
+    justify-content: space-between; 
+    height: 50px;
+    align-items: center;
+    padding: 5px 12px;
+    z-index: 1000;
+    font-family: Roboto;
+   
+}
+
+.left-sec {
+    margin-left: 111px;
+}
+
+.middle-sec {
+    display: flex;
+    flex-direction: row;
+    color: #8C827D;
+    
+}
+
+.order-btn {
+    font-weight: 500;
+    background-color: #2E1E0A;
+    color: #F7EBE1;
+    font-size: 16px;
+    border: none;
+    padding: 8px 18px;
+    border-radius: 3px;
+}
+
+.order-btn:hover {
+    cursor: pointer;
+}
+
+
+.middle-sec div {
+    font-size: 16px;
+    margin-right: 30px;
+    cursor: pointer;
+    padding: 8px 18px;
+}
+
+.right-sec {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    border-right: 2px solid #8C827D;
+    padding: 5px;
+}
+
+.user-icon i {
+    margin-right: 12px;
+    cursor: pointer;
+    color: #8C827D;
+    
+}
+
+.cart-icon {
+    padding: 5px;
+}
+
+.cart-icon svg {
+    position: relative;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #8C827D;
+    height: 24px;
+    width: 24px;
+}
+
+.cart-quantity {
+    font-weight: 500;
+    position: absolute;
+    font-size: 11px;
+    padding: 3px 6px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    top: 8px;
+    right: 60px;
+}
