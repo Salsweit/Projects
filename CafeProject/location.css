@@ -32,6 +32,53 @@
     margin-bottom: 53px;
 }
 
+.modal-contact{
+    font-weight: 500;
+    margin-left: 25px;
+    margin-top: 15px;
+    color: #383838;
+    margin-right: 15px;
+}
+
+.modal-contact .phone,
+.telephone,
+.location  {
+    display: flex;
+}
+
+
+.modal-contact .phone-num,
+.tele-num{
+    margin-top: 7px;
+    align-items: center;
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+.phone .phone-icon,
+.telephone .tele-icon {
+    height: 35px;
+    width: 35px;
+    background-color: #2E1E0A;
+    margin-bottom: 20px;
+    margin-right: 38px;
+    border-radius: 100%;
+}
+
+.location .loc-icon {
+    height: 35px;
+    width: 63px;
+    border-radius: 100%;
+    background-color: #2E1E0A;
+    margin-right: 38px;
+}
+
+.location .loc-add {
+    width: auto;
+    font-size: 16px;
+    font-family: Roboto;
+}
+
 .location-modal {
     position: absolute;
     display: flex;
@@ -68,6 +115,7 @@
 
 .location-modal .loc-direction {
     text-align: center;
+    margin-top: 28px;
 }
 
 .location-modal .loc-direction a:hover {
