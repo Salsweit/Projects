@@ -55,6 +55,12 @@ body {
     background-color: #F7EBE1;
 }
 
+.carousel button:hover {
+    background-color: #D3B49C; 
+    color: #5C4033; 
+    cursor: pointer;
+}
+
 .location-content {
     position: relative;
     display: flex;

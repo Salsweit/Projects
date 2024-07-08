@@ -20,9 +20,33 @@
 .middle-sec {
     display: flex;
     flex-direction: row;
+    font-family: Poppins;
+}
+
+.middle-sec a {
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
     color: #8C827D;
     font-family: Poppins;
-    
+    margin-right: 30px;
+    position: relative; 
+}
+
+.middle-sec a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: #8C827D;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; 
+}
+
+.middle-sec a:hover::after {
+    width: 100%; 
 }
 
 .order-btn {
@@ -36,16 +60,11 @@
 }
 
 .order-btn:hover {
+    background-color: #4a3011; 
+    color: #F7EBE1;
     cursor: pointer;
 }
 
-
-.middle-sec div {
-    font-size: 16px;
-    margin-right: 30px;
-    cursor: pointer;
-    padding: 8px 18px;
-}
 
 .right-sec {
     margin-right: 50px;
@@ -62,20 +81,59 @@
     margin-right: 12px;
     cursor: pointer;
     color: #8C827D;
-    
+    display: flex;
+    justify-content: center;
+}
+
+.user-icon .tooltip {
+    position: absolute;
+    font-size: 12px;
+    font-family: Poppins;
+    background-color: #333333; 
+    color: #ffffff; 
+    padding: 6px 12px;
+    border-radius: 4px;
+    bottom: -15px;
+    visibility: hidden;   
+}
+
+.user-icon i:hover .tooltip {
+     visibility: visible;
+     pointer-events: none;
 }
 
 .cart-icon {
     padding: 5px;
+    display: flex;
+    align-items: center;
 }
 
 .cart-icon svg {
+    margin-top: 3px;
     position: relative;
     margin-left: 10px;
     cursor: pointer;
     color: #8C827D;
     height: 24px;
     width: 24px;
+}
+
+.cart-icon .tooltip {
+    position: absolute;
+    font-size: 12px;
+    font-family: Poppins;
+    background-color: #333333; 
+    color: #ffffff; 
+    padding: 6px 12px;
+    border-radius: 4px;
+    bottom: -15px;
+    right: 55px;
+    visibility: hidden;
+}
+
+.cart-icon:hover .tooltip {
+    visibility: visible;
+    pointer-events: none;
 }
 
 .cart-quantity {

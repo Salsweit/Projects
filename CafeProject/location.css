@@ -41,7 +41,7 @@
 
 .location-modal .modal {
     padding: 15px;
-    background-color: #F7EBE1;
+    background-color: #FAF3E0; 
     width: 300px;
     margin-right: 21.5px;
     border: none;
@@ -51,15 +51,15 @@
 
 .location-modal .modal-header {
     text-align: center;
-    border-bottom: 1px solid #7E7B80;
+    border-bottom: 1px solid #5C5C5C;
     padding-bottom: 10px;
     font-weight: 500;
-    color: #7E7B80;
+    color: #5C5C5C; 
     font-family: Poppins;
 }
 
 .location-modal .loc-direction a {
-    color: #383838;
+    color: #383838; 
     font-weight: 500;
     font-family: Poppins;
     font-size: 16px;
@@ -71,5 +71,5 @@
 }
 
 .location-modal .loc-direction a:hover {
-    text-shadow: 0px 5px 6px rgba(62, 62, 51, 0.64);
+    color: #B2A1A1; 
 }
