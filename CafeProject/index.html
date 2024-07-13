@@ -13,9 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="popularmenu.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
@@ -80,6 +82,115 @@
     </div>
    </div>
 
+   <div class="popular-container">
+    <div class="title">
+      <h2>Popular menu</h2>
+      <p>Discover our wide array of refreshing beverages and delectable desserts at our coffee shop. 
+        Choose your favorites and savor the moment!</p>
+    </div>
+    
+    <div data-aos="fade-up"
+     data-aos-anchor-placement="top-center"
+     data-aos-duration="1500">
+    <div class="menus-container">
+      <div class="products-container">
+        <div class="for-img">
+          <img src="img/Arf1.jpg" alt="">
+        </div>
+        <div class="prod-name">
+          <div class="name">
+            Item name
+          </div>
+          <div class="price">
+            $20
+          </div>
+        </div>
+        <div class="prod-desc">
+          
+        </div>
+      </div>
+
+
+      <div class="products-container">
+        <div class="for-img">
+          <img src="img/meow2.jpg" alt="">
+        </div>
+        <div class="prod-name">
+          <div class="name">
+            
+          </div>
+        </div>
+        <div class="prod-desc">
+
+        </div>
+      </div>
+
+      <div class="products-container">
+        <div class="for-img">
+          <img src="img/Meow.jpg" alt="">
+        </div>
+        <div class="prod-name">
+          <div class="name">
+            
+          </div>
+        </div>
+        <div class="prod-desc">
+
+        </div>
+      </div>
+
+      <div class="products-container">
+        <div class="for-img">
+          <img src="img/meow2.jpg" alt="">
+        </div>
+        <div class="prod-name">
+          <div class="name">
+            
+          </div>
+        </div>
+        <div class="prod-desc">
+
+        </div>
+      </div>
+
+      <div class="products-container">
+        <div class="for-img">
+          <img src="img/Meow.jpg" alt="">
+        </div>
+        <div class="prod-name">
+          <div class="name">
+            
+          </div>
+        </div>
+        <div class="prod-desc">
+
+        </div>
+      </div>
+
+      <div class="products-container">
+        <div class="for-img">
+          <img src="img/Arf1.jpg" alt="">
+        </div>
+        <div class="prod-name">
+          <div class="name">
+            
+          </div>
+        </div>
+        <div class="prod-desc">
+
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="popular-menubtn">
+      <button >
+        Order online
+      </button>
+    </div> 
+   </div>
+    
+
+
    
     <div class="location-content">
       <img src="img/imgloc.jpg" alt="" />
@@ -92,7 +203,9 @@
         </p>
       </div>
 
+      
       <div class="location-modal">
+        <div data-aos="zoom-out-up">
         <div class="modal">
           <div class="modal-header">Legazpi City</div>
 
@@ -133,8 +246,9 @@
              target="_blank">VIEW DIRECTIONS</a>
           </div>
         </div>
+      </div>
 
-
+      <div data-aos="zoom-out-up">
         <div class="modal">
           <div class="modal-header">Naga City</div>
 
@@ -175,7 +289,9 @@
               target="_blank">VIEW DIRECTIONS</a>
           </div>
         </div>
+        </div>  
 
+        <div data-aos="zoom-out-up">
         <div class="modal">
           <div class="modal-header">Quezon City</div>
 
@@ -215,6 +331,7 @@
             <a href="https://www.google.com/maps"
              target="_blank">VIEW DIRECTIONS</a>
           </div>
+        </div>
         </div>
       </div>
     </div>
@@ -258,7 +375,10 @@
         </div>
       </div>
     </footer>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <script src="https://kit.fontawesome.com/848cbae232.js" crossorigin="anonymous"></script>
   </body>
 </html>
