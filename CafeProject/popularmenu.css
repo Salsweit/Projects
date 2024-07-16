@@ -2,7 +2,7 @@
 .popular-container {
     background-color: #fff;
     justify-content: center;
-    padding: 100px 0;
+    padding: 100px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;    
@@ -48,9 +48,6 @@
     border:  2px solid #BBBBBB;
 }
 
-.products-container:hover {
-
-}
 
 .products-container .for-img img {
     object-fit: cover;
@@ -63,14 +60,14 @@
 
 .products-container .prod-name .name {
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 23px;
     font-weight: 500;
     display: inline-block;
 }
 
 .products-container .prod-name .price {
     font-family: Poppins;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
     display: inline-block;
 }
@@ -82,13 +79,23 @@
     padding: 10px 20px;
 }
 
-
-.popular-container .popular-menubtn {
-    align-self: center;
+.section-btn-container {
+    width: 100%;
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
-.popular-container button {
+.section-btn-container .line {
+    width: 37%;
+    height: 2px;
+    background: rgba(238, 238, 238, 0.6);
+    
+}
+
+.popular-container .loadmore-btn {
     height: 50px;
     width: 137px;
     border: none;
@@ -97,9 +104,37 @@
     border-radius: 5px;
     font-family: Poppins;
     font-weight: 500;   
-    margin-top: 40px;
 }
 
+.loadmore-btn:hover {
+    cursor: pointer;
+}
 
+/* HEART ICON */
+.fav-icon {
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    padding: 9px 8px 3px 8px;
+    background-color: #2d2d2d96;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+}
 
+.fav-icon:focus {
+    outline: none;
+}
 
+.fav-icon:hover {
+    cursor: pointer;
+}
+
+.fav-icon svg {
+    fill: transparent;
+    color: white;
+}
+
+.fav-icon.active svg {
+    fill: white;
+}
